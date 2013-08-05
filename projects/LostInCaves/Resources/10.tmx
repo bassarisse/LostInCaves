@@ -1,0 +1,1465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="36" height="36" tilewidth="12" tileheight="12">
+ <tileset firstgid="1" name="Main" tilewidth="12" tileheight="12">
+  <image source="tileset.png" width="156" height="228"/>
+  <terraintypes>
+   <terrain name="Floor" tile="53"/>
+   <terrain name="Walls" tile="39"/>
+  </terraintypes>
+  <tile id="0" terrain="0,0,0,1">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="1" terrain="0,0,1,1">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="2" terrain="0,0,1,0">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="DeployName" value="Boulder"/>
+    <property name="Draggable" value=""/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="Door" value=""/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="DeployName" value="Lever"/>
+    <property name="Lever" value="off"/>
+    <property name="Switch" value="Lever"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="DeployName" value="TimeSwitch"/>
+    <property name="Switch" value="Time"/>
+    <property name="Time" value="off"/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="DeployName" value="TopPassage"/>
+   </properties>
+  </tile>
+  <tile id="11">
+   <properties>
+    <property name="Go" value="down"/>
+   </properties>
+  </tile>
+  <tile id="12">
+   <properties>
+    <property name="Collidable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="13" terrain="0,1,0,1">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="14" terrain="1,1,1,1">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="15" terrain="1,0,1,0">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="17">
+   <properties>
+    <property name="Door" value=""/>
+   </properties>
+  </tile>
+  <tile id="19">
+   <properties>
+    <property name="Lever" value="on"/>
+    <property name="Switch" value="Lever"/>
+   </properties>
+  </tile>
+  <tile id="20">
+   <properties>
+    <property name="Switch" value="Time"/>
+    <property name="Time" value="on"/>
+   </properties>
+  </tile>
+  <tile id="21">
+   <properties>
+    <property name="DeployName" value="RightPassage"/>
+   </properties>
+  </tile>
+  <tile id="24">
+   <properties>
+    <property name="Go" value="left"/>
+   </properties>
+  </tile>
+  <tile id="25">
+   <properties>
+    <property name="Warp" value="true"/>
+   </properties>
+  </tile>
+  <tile id="26" terrain="0,1,0,0">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="27" terrain="1,1,0,0">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="28" terrain="1,0,0,0">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="30">
+   <properties>
+    <property name="Door" value=""/>
+   </properties>
+  </tile>
+  <tile id="34">
+   <properties>
+    <property name="DeployName" value="BottomPassage"/>
+   </properties>
+  </tile>
+  <tile id="37">
+   <properties>
+    <property name="Go" value="up"/>
+   </properties>
+  </tile>
+  <tile id="39" terrain="1,1,1,0">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="40" terrain="1,1,0,0">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="41" terrain="1,1,0,1">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="43">
+   <properties>
+    <property name="Door" value=""/>
+   </properties>
+  </tile>
+  <tile id="47">
+   <properties>
+    <property name="DeployName" value="LeftPassage"/>
+   </properties>
+  </tile>
+  <tile id="50">
+   <properties>
+    <property name="Go" value="right"/>
+   </properties>
+  </tile>
+  <tile id="52" terrain="1,0,1,0">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="53" terrain="0,0,0,0"/>
+  <tile id="54" terrain="0,1,0,1">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="60">
+   <properties>
+    <property name="DeployName" value="CenterPassage"/>
+   </properties>
+  </tile>
+  <tile id="63">
+   <properties>
+    <property name="Go" value="downright"/>
+   </properties>
+  </tile>
+  <tile id="65" terrain="1,0,1,1">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="66" terrain="0,0,1,1">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="67" terrain="0,1,1,1">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="76">
+   <properties>
+    <property name="Go" value="downleft"/>
+   </properties>
+  </tile>
+  <tile id="81">
+   <properties>
+    <property name="DeployName" value="LevelEnd"/>
+    <property name="LevelEnd" value=""/>
+   </properties>
+  </tile>
+  <tile id="82">
+   <properties>
+    <property name="DeployName" value="WeightSwitch"/>
+    <property name="Switch" value="Weight"/>
+    <property name="Weight" value="off"/>
+   </properties>
+  </tile>
+  <tile id="83">
+   <properties>
+    <property name="Damage" value=""/>
+    <property name="DeployName" value="Spike"/>
+   </properties>
+  </tile>
+  <tile id="84">
+   <properties>
+    <property name="Collectable" value="Key"/>
+    <property name="DeployName" value="Key"/>
+   </properties>
+  </tile>
+  <tile id="89">
+   <properties>
+    <property name="Go" value="upright"/>
+   </properties>
+  </tile>
+  <tile id="95">
+   <properties>
+    <property name="Switch" value="Weight"/>
+    <property name="Weight" value="on"/>
+   </properties>
+  </tile>
+  <tile id="96">
+   <properties>
+    <property name="Damage" value=""/>
+    <property name="DeployName" value="Spike2"/>
+   </properties>
+  </tile>
+  <tile id="102">
+   <properties>
+    <property name="Go" value="upleft"/>
+   </properties>
+  </tile>
+  <tile id="107">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="108">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="109">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="110">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="111">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="112">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="113">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="120">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="122">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="123">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="124">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="125">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="126">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="133">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="134">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="135">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="136">
+   <properties>
+    <property name="NarrowPassage" value=""/>
+   </properties>
+  </tile>
+  <tile id="137">
+   <properties>
+    <property name="NarrowPassage" value=""/>
+   </properties>
+  </tile>
+  <tile id="146">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="147">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="148">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="149">
+   <properties>
+    <property name="NarrowPassage" value=""/>
+   </properties>
+  </tile>
+  <tile id="150">
+   <properties>
+    <property name="NarrowPassage" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Floor" width="36" height="36">
+  <data encoding="base64" compression="zlib">
+   eJzlWDtPAkEQHkNv6JVe6YFe7cGe2EvUiAWQkGjBmVCC8fF33Y078WNu5nbvgRRuMuEew+w337wWiP7XOnNynijdBu1btnpO+kHmToZw72UWnvvrQQU8bScjYbPIFuO5DfsuBL6Vk6wmnn7AhLhOSOetI/b3MoH7TcDaBB7JkYYTdbOAgWPk718pzrFfVp50DCxHTi4VaYHOdcDAMdoCNzE8PfBjATa8P8w3+h7LH8S0CVgkzzE8iIFtvAmfUvMZZRzspNpgO54bGYcWlauvC9LjqMU0hidTdKS/nL9VakPajOHZKjrsL/vE/F01hAfraEr5voF9pQv62nutVxfNi6mwNaBd/teUzwtfS1xjqG/1GBk7S1/bz8Ija5xrzOvLeGl7aXg0vbV4jnjunLzTbx/FGh8q+7Qp76+G58nJg8FljB/sWbEew3N1pOwj+Zkb9j7Ed618wGvP232QF4MfxGXlz5jyZw3JmeRnpNiP8ZOaP6sCLDJekwLbywI8iB19kHhmTm6UPZbifkC7cxNjzDqPFI+X9KNsPks8ODfnwRct54r4San3VDw4u7PAUyx/iuYkzo4e2bWi1bs1j2L7pC62/6XYexbvvH1tHvH8kbOnzu+RT7LnGL/z9rX4HgdbPkc413l+lV0cLy1m8tPqh4gHc70KnpTzGOaDdr5CPJjrdc5cqWvf8aqCR8axyXhVwVPET914lf0/QcPja/6UfnpAE/UVm6Nynlr905+DDl1fEpefHYeoL21e8TM+j/wFnrJ87nt9A9ZN1lw=
+  </data>
+ </layer>
+ <layer name="LowerDecoration" width="36" height="36">
+  <data encoding="base64" compression="zlib">
+   eJzt18ENACAIQ1H2n8gBdAAXcBbveK02hv8GID0AgQjAZ7oDXNLdAXAY7gAmil5sghqAG30M6OW54v6B2nIHAAp6vct/uNGq/pLZBtAMCSo=
+  </data>
+ </layer>
+ <layer name="LowerObjects" width="36" height="36">
+  <data encoding="base64" compression="zlib">
+   eJzt1dEKgCAMheG9o3Zf7/8S0d2QRSVrtvw/GIg3O6g4EQDIq4wOAChP32Np1m2NYmWx8kRlvJsnStY81l5V1dvbM8+mykuG++o9/zfyHGe/BPbGXOpFAR5m+1tWOZ91X5h7+I8dK/McNg==
+  </data>
+ </layer>
+ <layer name="Objects" width="36" height="36">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFIwG8JlH9dpq4YugA+YF2wCiAgzcD7YBRQBWgTGf7OOlsHzFgMKZlUusGUgC2esSWhvaNAtoBbOlkNC5pm3+wAWLaZvR20yigHAym+ur+QDtgEIPLA+2AUTAKRgHdActAO2AQAgCUVgsZ
+  </data>
+ </layer>
+ <layer name="UpperDecoration" width="36" height="36">
+  <data encoding="base64" compression="zlib">
+   eJztzjEBAAAIA6D1j2ciM+zRBxKQAAAAcGm+AwBQWJd7ANM=
+  </data>
+ </layer>
+ <layer name="Meta" width="36" height="36">
+  <data encoding="base64" compression="zlib">
+   eJztwYEAAAAAAqBx9ydYYISqAQAAAAD4Bk64AGk=
+  </data>
+ </layer>
+ <objectgroup name="Abstract" width="36" height="36">
+  <object name="Spawn" x="108" y="312" width="12" height="12"/>
+  <object x="12" y="360" width="12" height="12">
+   <properties>
+    <property name="p1" value=""/>
+   </properties>
+  </object>
+  <object name="p1" x="36" y="288" width="12" height="12">
+   <properties>
+    <property name="RemoveOnly" value=""/>
+   </properties>
+  </object>
+  <object x="120" y="264" width="12" height="12">
+   <properties>
+    <property name="l1" value=""/>
+   </properties>
+  </object>
+  <object name="l1" x="108" y="252" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="Lever"/>
+    <property name="p2" value=""/>
+   </properties>
+  </object>
+  <object x="120" y="216" width="12" height="12">
+   <properties>
+    <property name="l2" value=""/>
+   </properties>
+  </object>
+  <object name="p2" x="96" y="216" width="12" height="12"/>
+  <object name="p3" x="12" y="180" width="12" height="12"/>
+  <object name="l2" x="108" y="228" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="Lever"/>
+    <property name="p3" value=""/>
+   </properties>
+  </object>
+  <object name="l3" x="24" y="168" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="Lever"/>
+    <property name="p4" value=""/>
+   </properties>
+  </object>
+  <object x="12" y="156" width="12" height="12">
+   <properties>
+    <property name="l3" value=""/>
+   </properties>
+  </object>
+  <object name="p4" x="84" y="144" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="TopPassage"/>
+   </properties>
+  </object>
+  <object x="204" y="96" width="12" height="12">
+   <properties>
+    <property name="p5" value=""/>
+   </properties>
+  </object>
+  <object name="p5" x="180" y="132" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="BottomPassage"/>
+   </properties>
+  </object>
+  <object name="Monster" x="300" y="192" width="12" height="12">
+   <properties>
+    <property name="Speed" value="3500"/>
+    <property name="Walk" value="bf"/>
+   </properties>
+  </object>
+  <object name="s1" x="360" y="204" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="Spike"/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="s2" x="384" y="204" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="Spike"/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="s1" x="360" y="216" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="Spike2"/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="s2" x="384" y="216" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="Spike2"/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object x="300" y="204" width="12" height="12">
+   <properties>
+    <property name="s1" value=""/>
+   </properties>
+  </object>
+  <object x="300" y="216" width="12" height="12">
+   <properties>
+    <property name="s2" value=""/>
+   </properties>
+  </object>
+  <object x="300" y="168" width="12" height="12">
+   <properties>
+    <property name="levelend" value=""/>
+   </properties>
+  </object>
+  <object name="levelend" x="360" y="168" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="LevelEnd"/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="Monster" x="324" y="24" width="12" height="12">
+   <properties>
+    <property name="Speed" value="100"/>
+    <property name="Walk" value="bf"/>
+   </properties>
+  </object>
+  <object name="Monster" x="360" y="96" width="12" height="12">
+   <properties>
+    <property name="Facing" value="up"/>
+    <property name="Speed" value="100"/>
+    <property name="Walk" value="bf"/>
+   </properties>
+  </object>
+  <object name="Monster" x="384" y="24" width="12" height="12">
+   <properties>
+    <property name="Speed" value="100"/>
+    <property name="Walk" value="bf"/>
+   </properties>
+  </object>
+  <object name="Monster" x="300" y="84" width="12" height="12">
+   <properties>
+    <property name="Facing" value="right"/>
+    <property name="Speed" value="100"/>
+    <property name="Walk" value="bf"/>
+   </properties>
+  </object>
+  <object name="Monster" x="300" y="372" width="12" height="12">
+   <properties>
+    <property name="Facing" value="right"/>
+    <property name="Speed" value="200"/>
+    <property name="Walk" value="bf"/>
+   </properties>
+  </object>
+  <object x="300" y="372" width="12" height="12">
+   <properties>
+    <property name="OnOnly" value="true"/>
+    <property name="ls1r" value=""/>
+    <property name="ls2r" value=""/>
+    <property name="ls3" value=""/>
+   </properties>
+  </object>
+  <object name="ls1" x="300" y="300" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="Spike"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="ls1r" x="300" y="300" width="12" height="12">
+   <properties>
+    <property name="Lower" value=""/>
+    <property name="RemoveOnly" value=""/>
+   </properties>
+  </object>
+  <object x="312" y="372" width="12" height="12">
+   <properties>
+    <property name="OnOnly" value="true"/>
+    <property name="ls1r" value=""/>
+    <property name="ls2r" value=""/>
+    <property name="ls3r" value=""/>
+    <property name="ls4" value=""/>
+   </properties>
+  </object>
+  <object x="324" y="372" width="12" height="12">
+   <properties>
+    <property name="OnOnly" value="true"/>
+    <property name="ls1" value=""/>
+    <property name="ls2r" value=""/>
+    <property name="ls3r" value=""/>
+    <property name="ls4r" value=""/>
+    <property name="ls5" value=""/>
+   </properties>
+  </object>
+  <object x="336" y="372" width="12" height="12">
+   <properties>
+    <property name="OnOnly" value="true"/>
+    <property name="ls2" value=""/>
+    <property name="ls3r" value=""/>
+    <property name="ls4r" value=""/>
+    <property name="ls5r" value=""/>
+    <property name="ls6" value=""/>
+   </properties>
+  </object>
+  <object x="348" y="372" width="12" height="12">
+   <properties>
+    <property name="OnOnly" value="true"/>
+    <property name="ls3" value=""/>
+    <property name="ls4r" value=""/>
+    <property name="ls5r" value=""/>
+    <property name="ls6r" value=""/>
+    <property name="ls7" value=""/>
+   </properties>
+  </object>
+  <object x="360" y="372" width="12" height="12">
+   <properties>
+    <property name="OnOnly" value="true"/>
+    <property name="ls4" value=""/>
+    <property name="ls5r" value=""/>
+    <property name="ls6r" value=""/>
+    <property name="ls7r" value=""/>
+    <property name="ls8" value=""/>
+   </properties>
+  </object>
+  <object x="372" y="372" width="12" height="12">
+   <properties>
+    <property name="OnOnly" value="true"/>
+    <property name="ls5" value=""/>
+    <property name="ls6r" value=""/>
+    <property name="ls7r" value=""/>
+    <property name="ls8r" value=""/>
+    <property name="ls9" value=""/>
+   </properties>
+  </object>
+  <object x="384" y="372" width="12" height="12">
+   <properties>
+    <property name="OnOnly" value="true"/>
+    <property name="ls10" value=""/>
+    <property name="ls6" value=""/>
+    <property name="ls7r" value=""/>
+    <property name="ls8r" value=""/>
+    <property name="ls9r" value=""/>
+   </properties>
+  </object>
+  <object x="396" y="372" width="12" height="12">
+   <properties>
+    <property name="OnOnly" value="true"/>
+    <property name="ls10r" value=""/>
+    <property name="ls7" value=""/>
+    <property name="ls8r" value=""/>
+    <property name="ls9r" value=""/>
+   </properties>
+  </object>
+  <object x="408" y="372" width="12" height="12">
+   <properties>
+    <property name="OnOnly" value="true"/>
+    <property name="ls10r" value=""/>
+    <property name="ls8" value=""/>
+    <property name="ls9r" value=""/>
+   </properties>
+  </object>
+  <object name="ls2r" x="312" y="300" width="12" height="12">
+   <properties>
+    <property name="Lower" value=""/>
+    <property name="RemoveOnly" value=""/>
+   </properties>
+  </object>
+  <object name="ls2" x="312" y="300" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="Spike"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="ls4r" x="336" y="300" width="12" height="12">
+   <properties>
+    <property name="Lower" value=""/>
+    <property name="RemoveOnly" value=""/>
+   </properties>
+  </object>
+  <object name="ls3r" x="324" y="300" width="12" height="12">
+   <properties>
+    <property name="Lower" value=""/>
+    <property name="RemoveOnly" value=""/>
+   </properties>
+  </object>
+  <object name="ls4" x="336" y="300" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="Spike"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="ls3" x="324" y="300" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="Spike"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="ls6r" x="360" y="300" width="12" height="12">
+   <properties>
+    <property name="Lower" value=""/>
+    <property name="RemoveOnly" value=""/>
+   </properties>
+  </object>
+  <object name="ls5r" x="348" y="300" width="12" height="12">
+   <properties>
+    <property name="Lower" value=""/>
+    <property name="RemoveOnly" value=""/>
+   </properties>
+  </object>
+  <object name="ls6" x="360" y="300" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="Spike"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="ls5" x="348" y="300" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="Spike"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="ls8r" x="384" y="300" width="12" height="12">
+   <properties>
+    <property name="Lower" value=""/>
+    <property name="RemoveOnly" value=""/>
+   </properties>
+  </object>
+  <object name="ls7r" x="372" y="300" width="12" height="12">
+   <properties>
+    <property name="Lower" value=""/>
+    <property name="RemoveOnly" value=""/>
+   </properties>
+  </object>
+  <object name="ls8" x="384" y="300" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="Spike"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="ls7" x="372" y="300" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="Spike"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="ls10r" x="408" y="300" width="12" height="12">
+   <properties>
+    <property name="Lower" value=""/>
+    <property name="RemoveOnly" value=""/>
+   </properties>
+  </object>
+  <object name="ls9r" x="396" y="300" width="12" height="12">
+   <properties>
+    <property name="Lower" value=""/>
+    <property name="RemoveOnly" value=""/>
+   </properties>
+  </object>
+  <object name="ls10" x="408" y="300" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="Spike"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="ls9" x="396" y="300" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="Spike"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="ks1" x="228" y="252" width="12" height="12">
+   <properties>
+    <property name="Lower" value=""/>
+    <property name="RemoveOnly" value=""/>
+   </properties>
+  </object>
+  <object x="156" y="156" width="12" height="12">
+   <properties>
+    <property name="as1" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="192" y="156" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+    <property name="as1r" value=""/>
+   </properties>
+  </object>
+  <object name="as1" x="192" y="156" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1" x="204" y="156" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="204" y="156" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+    <property name="as1r" value=""/>
+   </properties>
+  </object>
+  <object name="as1" x="216" y="156" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="216" y="156" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+    <property name="as1r" value=""/>
+   </properties>
+  </object>
+  <object name="as1" x="228" y="156" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="228" y="156" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+    <property name="as1r" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="240" y="156" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+    <property name="as1r" value=""/>
+   </properties>
+  </object>
+  <object name="as1" x="240" y="156" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="204" y="168" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+    <property name="as1r" value=""/>
+   </properties>
+  </object>
+  <object name="as1" x="204" y="168" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="216" y="168" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+    <property name="as1r" value=""/>
+   </properties>
+  </object>
+  <object name="as1" x="216" y="168" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="228" y="168" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+    <property name="as1r" value=""/>
+   </properties>
+  </object>
+  <object name="as1" x="228" y="168" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="240" y="168" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+    <property name="as1r" value=""/>
+   </properties>
+  </object>
+  <object name="as1" x="240" y="168" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="192" y="180" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+    <property name="as1r" value=""/>
+   </properties>
+  </object>
+  <object name="as1" x="192" y="180" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="204" y="180" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+    <property name="as1r" value=""/>
+   </properties>
+  </object>
+  <object name="as1" x="204" y="180" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="216" y="180" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+    <property name="as1r" value=""/>
+   </properties>
+  </object>
+  <object name="as1" x="216" y="180" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="228" y="180" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+    <property name="as1r" value=""/>
+   </properties>
+  </object>
+  <object name="as1" x="228" y="180" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="240" y="180" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+    <property name="as1r" value=""/>
+   </properties>
+  </object>
+  <object name="as1" x="240" y="180" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="192" y="192" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+    <property name="as1r" value=""/>
+   </properties>
+  </object>
+  <object name="as1" x="192" y="192" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="204" y="192" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+    <property name="as1r" value=""/>
+   </properties>
+  </object>
+  <object name="as1" x="204" y="192" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="228" y="204" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+    <property name="as1r" value=""/>
+   </properties>
+  </object>
+  <object name="as1" x="228" y="204" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="180" y="216" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+    <property name="as1r" value=""/>
+   </properties>
+  </object>
+  <object name="as1" x="180" y="216" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="192" y="216" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+    <property name="as1r" value=""/>
+   </properties>
+  </object>
+  <object name="as1" x="192" y="216" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="204" y="216" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+    <property name="as1r" value=""/>
+   </properties>
+  </object>
+  <object name="as1" x="204" y="216" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="216" y="216" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+    <property name="as1r" value=""/>
+   </properties>
+  </object>
+  <object name="as1" x="216" y="216" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="228" y="216" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+    <property name="as1r" value=""/>
+   </properties>
+  </object>
+  <object name="as1" x="228" y="216" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="192" y="240" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+    <property name="as1r" value=""/>
+   </properties>
+  </object>
+  <object name="as1" x="192" y="240" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="204" y="240" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+    <property name="as1r" value=""/>
+   </properties>
+  </object>
+  <object name="as1" x="204" y="240" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="216" y="240" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+    <property name="as1r" value=""/>
+   </properties>
+  </object>
+  <object name="as1" x="216" y="240" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="228" y="240" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+    <property name="as1r" value=""/>
+   </properties>
+  </object>
+  <object name="as1" x="228" y="240" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="192" y="168" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+    <property name="as1r" value=""/>
+   </properties>
+  </object>
+  <object name="as1" x="192" y="168" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="180" y="168" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+   </properties>
+  </object>
+  <object name="as1" x="180" y="168" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="180" y="180" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+   </properties>
+  </object>
+  <object name="as1" x="180" y="180" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="180" y="192" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+   </properties>
+  </object>
+  <object name="as1" x="180" y="192" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="180" y="204" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+   </properties>
+  </object>
+  <object name="as1" x="180" y="204" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="192" y="204" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+   </properties>
+  </object>
+  <object name="as1" x="192" y="204" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="204" y="204" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+   </properties>
+  </object>
+  <object name="as1" x="204" y="204" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="216" y="204" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+   </properties>
+  </object>
+  <object name="as1" x="216" y="204" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="216" y="192" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+   </properties>
+  </object>
+  <object name="as1" x="216" y="192" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="228" y="192" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+   </properties>
+  </object>
+  <object name="as1" x="228" y="192" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="240" y="192" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+   </properties>
+  </object>
+  <object name="as1" x="240" y="192" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="240" y="204" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+   </properties>
+  </object>
+  <object name="as1" x="240" y="204" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="240" y="216" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+   </properties>
+  </object>
+  <object name="as1" x="240" y="216" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="240" y="228" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+   </properties>
+  </object>
+  <object name="as1" x="240" y="228" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="228" y="228" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+   </properties>
+  </object>
+  <object name="as1" x="228" y="228" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="216" y="228" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+   </properties>
+  </object>
+  <object name="as1" x="216" y="228" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="204" y="228" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+   </properties>
+  </object>
+  <object name="as1" x="204" y="228" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="192" y="228" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+   </properties>
+  </object>
+  <object name="as1" x="192" y="228" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="180" y="228" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+   </properties>
+  </object>
+  <object name="as1" x="180" y="228" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="180" y="240" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+   </properties>
+  </object>
+  <object name="as1" x="180" y="240" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="180" y="252" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+   </properties>
+  </object>
+  <object name="as1" x="180" y="252" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="192" y="252" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+   </properties>
+  </object>
+  <object name="as1" x="192" y="252" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="204" y="252" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+   </properties>
+  </object>
+  <object name="as1" x="204" y="252" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object name="as1r" x="216" y="252" width="12" height="12">
+   <properties>
+    <property name="Lower" value="true"/>
+    <property name="RemoveOnly" value="true"/>
+    <property name="ks1" value=""/>
+   </properties>
+  </object>
+  <object name="as1" x="216" y="252" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="WeightSwitch"/>
+    <property name="DeployOnly" value=""/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

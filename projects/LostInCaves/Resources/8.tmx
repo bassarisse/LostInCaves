@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="60" height="36" tilewidth="12" tileheight="12">
+ <tileset firstgid="1" name="Main" tilewidth="12" tileheight="12">
+  <image source="tileset.png" width="156" height="228"/>
+  <terraintypes>
+   <terrain name="Floor" tile="53"/>
+   <terrain name="Walls" tile="39"/>
+  </terraintypes>
+  <tile id="0" terrain="0,0,0,1">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="1" terrain="0,0,1,1">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="2" terrain="0,0,1,0">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="DeployName" value="Boulder"/>
+    <property name="Draggable" value=""/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="Door" value=""/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="DeployName" value="Lever"/>
+    <property name="Lever" value="off"/>
+    <property name="Switch" value="Lever"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="DeployName" value="TimeSwitch"/>
+    <property name="Switch" value="Time"/>
+    <property name="Time" value="off"/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="DeployName" value="TopPassage"/>
+   </properties>
+  </tile>
+  <tile id="11">
+   <properties>
+    <property name="Go" value="down"/>
+   </properties>
+  </tile>
+  <tile id="12">
+   <properties>
+    <property name="Collidable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="13" terrain="0,1,0,1">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="14" terrain="1,1,1,1">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="15" terrain="1,0,1,0">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="17">
+   <properties>
+    <property name="Door" value=""/>
+   </properties>
+  </tile>
+  <tile id="19">
+   <properties>
+    <property name="Lever" value="on"/>
+    <property name="Switch" value="Lever"/>
+   </properties>
+  </tile>
+  <tile id="20">
+   <properties>
+    <property name="Switch" value="Time"/>
+    <property name="Time" value="on"/>
+   </properties>
+  </tile>
+  <tile id="21">
+   <properties>
+    <property name="DeployName" value="RightPassage"/>
+   </properties>
+  </tile>
+  <tile id="24">
+   <properties>
+    <property name="Go" value="left"/>
+   </properties>
+  </tile>
+  <tile id="25">
+   <properties>
+    <property name="Warp" value="true"/>
+   </properties>
+  </tile>
+  <tile id="26" terrain="0,1,0,0">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="27" terrain="1,1,0,0">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="28" terrain="1,0,0,0">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="30">
+   <properties>
+    <property name="Door" value=""/>
+   </properties>
+  </tile>
+  <tile id="34">
+   <properties>
+    <property name="DeployName" value="BottomPassage"/>
+   </properties>
+  </tile>
+  <tile id="37">
+   <properties>
+    <property name="Go" value="up"/>
+   </properties>
+  </tile>
+  <tile id="39" terrain="1,1,1,0">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="40" terrain="1,1,0,0">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="41" terrain="1,1,0,1">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="43">
+   <properties>
+    <property name="Door" value=""/>
+   </properties>
+  </tile>
+  <tile id="47">
+   <properties>
+    <property name="DeployName" value="LeftPassage"/>
+   </properties>
+  </tile>
+  <tile id="50">
+   <properties>
+    <property name="Go" value="right"/>
+   </properties>
+  </tile>
+  <tile id="52" terrain="1,0,1,0">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="53" terrain="0,0,0,0"/>
+  <tile id="54" terrain="0,1,0,1">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="60">
+   <properties>
+    <property name="DeployName" value="CenterPassage"/>
+   </properties>
+  </tile>
+  <tile id="63">
+   <properties>
+    <property name="Go" value="downright"/>
+   </properties>
+  </tile>
+  <tile id="65" terrain="1,0,1,1">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="66" terrain="0,0,1,1">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="67" terrain="0,1,1,1">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="76">
+   <properties>
+    <property name="Go" value="downleft"/>
+   </properties>
+  </tile>
+  <tile id="81">
+   <properties>
+    <property name="DeployName" value="LevelEnd"/>
+    <property name="LevelEnd" value=""/>
+   </properties>
+  </tile>
+  <tile id="82">
+   <properties>
+    <property name="DeployName" value="WeightSwitch"/>
+    <property name="Switch" value="Weight"/>
+    <property name="Weight" value="off"/>
+   </properties>
+  </tile>
+  <tile id="83">
+   <properties>
+    <property name="Damage" value=""/>
+    <property name="DeployName" value="Spike"/>
+   </properties>
+  </tile>
+  <tile id="84">
+   <properties>
+    <property name="Collectable" value="Key"/>
+    <property name="DeployName" value="Key"/>
+   </properties>
+  </tile>
+  <tile id="89">
+   <properties>
+    <property name="Go" value="upright"/>
+   </properties>
+  </tile>
+  <tile id="95">
+   <properties>
+    <property name="Switch" value="Weight"/>
+    <property name="Weight" value="on"/>
+   </properties>
+  </tile>
+  <tile id="96">
+   <properties>
+    <property name="Damage" value=""/>
+    <property name="DeployName" value="Spike2"/>
+   </properties>
+  </tile>
+  <tile id="102">
+   <properties>
+    <property name="Go" value="upleft"/>
+   </properties>
+  </tile>
+  <tile id="107">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="108">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="109">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="110">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="111">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="112">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="113">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="120">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="122">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="123">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="124">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="125">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="126">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="133">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="134">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="135">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="136">
+   <properties>
+    <property name="NarrowPassage" value=""/>
+   </properties>
+  </tile>
+  <tile id="137">
+   <properties>
+    <property name="NarrowPassage" value=""/>
+   </properties>
+  </tile>
+  <tile id="146">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="147">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="148">
+   <properties>
+    <property name="Collidable" value=""/>
+   </properties>
+  </tile>
+  <tile id="149">
+   <properties>
+    <property name="NarrowPassage" value=""/>
+   </properties>
+  </tile>
+  <tile id="150">
+   <properties>
+    <property name="NarrowPassage" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Floor" width="60" height="36">
+  <data encoding="base64" compression="zlib">
+   eJztWU1PAjEQHePP8A+g99W7crfcCXcwXoHEo5igJ0CDf9dO7MtOaj+GsLJptckLS2nrvH3t9LUOiOhSiSsqvzQW1wHMxLNxnzc9xdhlkXyfLKYWzxYLi6Wrw++18GX9mOfaYmyxsVhZvLg6aFwLX+i3Fs9bi51XVxvfd4tHDx9UH1/jMKLveR3KXzXxjfHjd8B5+oFavgMqe7+SfKEzviNnQfM3i1evTWn6p/RFzpJ8bi3uPJxTOfkb8XPMzOmMfvIBhpEx8M5K4IvCvD8pzum3+vZRkIP2lM87sXy1D9RdJdr3AfCSa5j3pNS8TK13CYyjbX8KgBf2YE2e5bYT0dYEgN+Qz3NxxPI9cJ/p4/fP7R+N1y7Hd+xiiI0rx8np67+j0DghPim+sn7hMAvw1ejr53PWOpbTh4GxQ7HFeDHY68xFzNq5Yly/FbU+QvKVPlKzrzTUeq9D1ntMz5hGc8F36eCvo1A/jovPtVtqfQTi9D2EZl9pRAyH5rcYX1nP73LquHLc0Ah+L7XmjesDvjtFnBq+/jyJtZtSeC5qtOaYNyLunRjLJMYxos9CEaeGrz9PYu0wH5l3KNem+I4EX+iaWu8SiG+liFPDV6sv5iOvqYkizlDuzeXwWN1YPJ9KX/6b8pzVNXJruYv7RnjmXH4Lnaf6wjH+nn3xnso443dRSjwDHlP+Kt8LKvcu65CSOwfUpru8x4X/Y08BP1EjX6mn9LjsKWrlC33Z98n7zFr5Auyd2EfV9L9TWXK+qZS7yv9SV/kC9L7S7A==
+  </data>
+ </layer>
+ <layer name="LowerDecoration" width="60" height="36">
+  <data encoding="base64" compression="zlib">
+   eJzt18ENgCAMheHuv4MOoA7gABrPbmS4mhDR2j5N/u8M5IVAC2YoNnUAwGFSB4DErA4A3LQ2jNnDUwD4onN9oMfla6nRLajj8a7ux5iS4rnaWesdaw6Oudk8d638+zz7hBx/7GG1uvFWb4DZog4AAECATh0AYXgHAloHkVYQog==
+  </data>
+ </layer>
+ <layer name="LowerObjects" width="60" height="36">
+  <data encoding="base64" compression="zlib">
+   eJzt1qENADAMBLGfsd1/l/CA0kSVPcHBS4Cf3OkAAACe/NoOZzoAAAAAAJoCY6oA+Q==
+  </data>
+ </layer>
+ <layer name="Objects" width="60" height="36">
+  <data encoding="base64" compression="zlib">
+   eJztzrEJACAQBMFPrMT+Y5uyCFPTB0VeZuCyCzYCAADO6K8DCmnbKhmJ77xWAQAAAADwnwWrsQHW
+  </data>
+ </layer>
+ <layer name="UpperDecoration" width="60" height="36">
+  <data encoding="base64" compression="zlib">
+   eJztyCEBAAAIA7D3j0Q6ChyH3OSSbo4HAAAAAAAAAODXApc4ALs=
+  </data>
+ </layer>
+ <layer name="Meta" width="60" height="36">
+  <data encoding="base64" compression="zlib">
+   eJzt1oENAiEMBVAGYAEWcIFboAu4gAvg/hMoCc1V0gJqlJL8l1zCVU74B8kRAgAAAAAA/Mp99QQ2cQx+vzb3ZPRLzyvWdhR1blvPtf//D0cddyb77cM+WYy1Sjt2rLWo9JV9SKmP1mllTqk3j15uEu2ZPeklb6HNpZeVUXjN6nUfty5KLU08V/JlcU9KH34fXvJqWVkvs1zLbPY6ecjbZk21Nlrb3r61eMjLylxyGM9pZh0LUmpe9vW7Ga3vL+8Nvhi3redm3yEAAOyNz8Ez50PYD58neudkAIBvPAAzGBHU
+  </data>
+ </layer>
+ <objectgroup name="Abstract" width="60" height="36">
+  <object x="300" y="168" width="12" height="12">
+   <properties>
+    <property name="l1" value=""/>
+   </properties>
+  </object>
+  <object name="k1" x="684" y="180" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="Key"/>
+    <property name="Lower" value=""/>
+   </properties>
+  </object>
+  <object x="636" y="252" width="12" height="12">
+   <properties>
+    <property name="k1" value=""/>
+    <property name="l1r" value=""/>
+   </properties>
+  </object>
+  <object name="l1" x="636" y="252" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="Lever"/>
+    <property name="DeployOnly" value="true"/>
+   </properties>
+  </object>
+  <object name="l1r" x="636" y="252" width="12" height="12">
+   <properties>
+    <property name="RemoveOnly" value="true"/>
+   </properties>
+  </object>
+  <object name="Spawn" x="228" y="360" width="12" height="12"/>
+  <object name="Monster" x="216" y="348" width="12" height="12">
+   <properties>
+    <property name="Speed" value="60"/>
+    <property name="Walk" value=""/>
+   </properties>
+  </object>
+  <object name="l2" x="72" y="108" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="Lever"/>
+   </properties>
+  </object>
+  <object name="p1" x="36" y="132" width="12" height="12">
+   <properties>
+    <property name="Deploy" value="BottomPassage"/>
+   </properties>
+  </object>
+  <object x="72" y="108" width="12" height="12">
+   <properties>
+    <property name="p1" value=""/>
+   </properties>
+  </object>
+  <object x="60" y="48" width="12" height="12">
+   <properties>
+    <property name="l2" value=""/>
+   </properties>
+  </object>
+  <object name="Monster" x="60" y="84" width="12" height="12">
+   <properties>
+    <property name="Walk" value="fp"/>
+   </properties>
+  </object>
+  <object name="Monster" x="324" y="168" width="12" height="12">
+   <properties>
+    <property name="Walk" value=""/>
+   </properties>
+  </object>
+  <object name="Monster" x="372" y="180" width="12" height="12">
+   <properties>
+    <property name="Walk" value=""/>
+   </properties>
+  </object>
+  <object name="Monster" x="324" y="204" width="12" height="12">
+   <properties>
+    <property name="Walk" value=""/>
+   </properties>
+  </object>
+  <object name="Monster" x="396" y="228" width="12" height="12">
+   <properties>
+    <property name="Walk" value=""/>
+   </properties>
+  </object>
+  <object name="Monster" x="300" y="240" width="12" height="12">
+   <properties>
+    <property name="Walk" value=""/>
+   </properties>
+  </object>
+  <object name="Monster" x="360" y="240" width="12" height="12">
+   <properties>
+    <property name="Walk" value=""/>
+   </properties>
+  </object>
+  <object name="Monster" x="408" y="264" width="12" height="12">
+   <properties>
+    <property name="Walk" value=""/>
+   </properties>
+  </object>
+  <object name="Monster" x="312" y="156" width="12" height="12">
+   <properties>
+    <property name="Walk" value=""/>
+   </properties>
+  </object>
+  <object name="Monster" x="348" y="168" width="12" height="12">
+   <properties>
+    <property name="Walk" value=""/>
+   </properties>
+  </object>
+  <object name="Monster" x="444" y="252" width="12" height="12">
+   <properties>
+    <property name="Walk" value=""/>
+   </properties>
+  </object>
+  <object name="Monster" x="492" y="204" width="12" height="12">
+   <properties>
+    <property name="Speed" value="1000"/>
+    <property name="Walk" value=""/>
+   </properties>
+  </object>
+  <object name="Monster" x="504" y="216" width="12" height="12">
+   <properties>
+    <property name="Facing" value="up"/>
+    <property name="Speed" value="1000"/>
+    <property name="Walk" value=""/>
+   </properties>
+  </object>
+  <object name="Monster" x="480" y="192" width="12" height="12">
+   <properties>
+    <property name="Speed" value="333"/>
+    <property name="Walk" value=""/>
+   </properties>
+  </object>
+  <object name="Monster" x="468" y="180" width="12" height="12">
+   <properties>
+    <property name="Speed" value="200"/>
+    <property name="Walk" value=""/>
+   </properties>
+  </object>
+  <object name="Monster" x="516" y="228" width="12" height="12">
+   <properties>
+    <property name="Facing" value="up"/>
+    <property name="Speed" value="333"/>
+    <property name="Walk" value=""/>
+   </properties>
+  </object>
+  <object name="Monster" x="528" y="240" width="12" height="12">
+   <properties>
+    <property name="Facing" value="up"/>
+    <property name="Speed" value="200"/>
+    <property name="Walk" value=""/>
+   </properties>
+  </object>
+  <object name="Monster" x="456" y="180" width="12" height="12">
+   <properties>
+    <property name="Walk" value=""/>
+   </properties>
+  </object>
+  <object name="Monster" x="528" y="156" width="12" height="12">
+   <properties>
+    <property name="Walk" value=""/>
+   </properties>
+  </object>
+  <object name="Monster" x="540" y="264" width="12" height="12">
+   <properties>
+    <property name="Walk" value=""/>
+   </properties>
+  </object>
+  <object name="Monster" x="600" y="264" width="12" height="12">
+   <properties>
+    <property name="Walk" value=""/>
+   </properties>
+  </object>
+  <object name="Monster" x="600" y="156" width="12" height="12">
+   <properties>
+    <property name="Walk" value=""/>
+   </properties>
+  </object>
+  <object name="Monster" x="540" y="156" width="12" height="12">
+   <properties>
+    <property name="Walk" value=""/>
+   </properties>
+  </object>
+  <object name="Monster" x="564" y="156" width="12" height="12">
+   <properties>
+    <property name="Walk" value=""/>
+   </properties>
+  </object>
+  <object name="Monster" x="564" y="264" width="12" height="12">
+   <properties>
+    <property name="Walk" value=""/>
+   </properties>
+  </object>
+  <object name="Monster" x="624" y="240" width="12" height="12">
+   <properties>
+    <property name="Walk" value="bf"/>
+   </properties>
+  </object>
+  <object name="Monster" x="624" y="228" width="12" height="12">
+   <properties>
+    <property name="Walk" value="bf"/>
+   </properties>
+  </object>
+  <object name="Monster" x="624" y="216" width="12" height="12">
+   <properties>
+    <property name="Walk" value="bf"/>
+   </properties>
+  </object>
+  <object name="Monster" x="624" y="204" width="12" height="12">
+   <properties>
+    <property name="Walk" value="bf"/>
+   </properties>
+  </object>
+  <object name="Monster" x="624" y="192" width="12" height="12">
+   <properties>
+    <property name="Walk" value="bf"/>
+   </properties>
+  </object>
+  <object name="Monster" x="624" y="180" width="12" height="12">
+   <properties>
+    <property name="Walk" value="bf"/>
+   </properties>
+  </object>
+  <object name="Monster" x="648" y="168" width="12" height="12">
+   <properties>
+    <property name="Walk" value="bf"/>
+   </properties>
+  </object>
+  <object name="Monster" x="648" y="252" width="12" height="12">
+   <properties>
+    <property name="Walk" value="bf"/>
+   </properties>
+  </object>
+  <object name="Monster" x="696" y="252" width="12" height="12">
+   <properties>
+    <property name="Facing" value="up"/>
+    <property name="Walk" value=""/>
+   </properties>
+  </object>
+  <object name="Monster" x="696" y="168" width="12" height="12">
+   <properties>
+    <property name="Walk" value=""/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
